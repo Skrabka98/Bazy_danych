@@ -22,7 +22,7 @@ namespace projekt_bazy
 
         private void loginForm_Load(object sender, EventArgs e)
         {
-
+            this.ActiveControl = label1;
         }
 
         private void close_MouseLeave(object sender, EventArgs e)
@@ -40,38 +40,54 @@ namespace projekt_bazy
             Application.Exit();
         }
 
-        private void buttonZaloguj_Click(object sender, EventArgs e)
+        public void buttonZaloguj_Click(object sender, EventArgs e)
         {
             bazaDanych bd = new bazaDanych();
             String login = textBoxLogin.Text;
             String haslo = textBoxHaslo.Text;
-            
-            String uprawnienia;
+           
             DataTable dataTable = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `Uzytkownik` WHERE `login` = @log and `haslo` = @haslo", bd.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `Login` WHERE `login` = @log and `haslo` = @haslo", bd.getConnection());
             command.Parameters.Add("@log", MySqlDbType.VarChar).Value = login;
             command.Parameters.Add("@haslo", MySqlDbType.VarChar).Value = haslo;
             adapter.SelectCommand = command;
             adapter.Fill(dataTable);
+            
+                
 
-            if (dataTable.Rows.Count > 0)
-            {
-               
-            }
-            else
-                if (login.Trim().Equals(""))
-            {
-                MessageBox.Show("Podaj login");
-            }
-           else if (haslo.Trim().Equals(""))
-            {
-                MessageBox.Show("Podaj haslo");
-            }
-            else
-            {
-                MessageBox.Show("Błędny login lub hasło");
-            }
+
+                if (dataTable.Rows.Count > 0)
+                {
+                var upra = dataTable.Rows[0]["uprawnienia"].ToString();
+                var upraBool = bool.Parse(upra);
+                if (upraBool == false)
+                    {
+                        this.Hide();
+                        zalogowanoUserForm user = new zalogowanoUserForm();
+                        user.Show();
+                    }
+                    else if (upraBool == true)
+                    {
+                        this.Hide();
+                        zalogowanoAdminForm admin = new zalogowanoAdminForm();
+                        admin.Show();
+                    }
+                }
+                else
+                    if (login.Trim().Equals(""))
+                {
+                    MessageBox.Show("Podaj login");
+                }
+                else if (haslo.Trim().Equals(""))
+                {
+                    MessageBox.Show("Podaj haslo");
+                }
+                else
+                {
+                    MessageBox.Show("Błędny login lub hasło");
+                }
+            
         }
 
         private void createAccount_Click(object sender, EventArgs e)
@@ -89,6 +105,48 @@ namespace projekt_bazy
         private void createAccount_MouseLeave(object sender, EventArgs e)
         {
             createAccount.ForeColor = Color.Black;
+        }
+
+        private void textBoxLogin_Enter(object sender, EventArgs e)
+        {
+            String login = textBoxLogin.Text;
+            if (login.Equals("Login"))
+            {
+                textBoxLogin.Text = "";
+                textBoxLogin.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxLogin_Leave(object sender, EventArgs e)
+        {
+            String login = textBoxLogin.Text;
+            if (login.Equals(""))
+            {
+                textBoxLogin.Text = "Login";
+                textBoxLogin.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxHaslo_Enter(object sender, EventArgs e)
+        {
+            String haslo = textBoxHaslo.Text;
+            if (haslo.Equals(" Hasło"))
+            {
+                textBoxHaslo.Text = "";
+                textBoxHaslo.UseSystemPasswordChar = true;
+                textBoxHaslo.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxHaslo_Leave(object sender, EventArgs e)
+        {
+            String haslo = textBoxHaslo.Text;
+            if (haslo.Equals(""))
+            {
+                textBoxHaslo.Text = " Hasło";
+                textBoxHaslo.UseSystemPasswordChar = false;
+                textBoxHaslo.ForeColor = Color.Gray;
+            }
         }
     }
 }

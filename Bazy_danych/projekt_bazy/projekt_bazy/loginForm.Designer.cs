@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.createAccount = new System.Windows.Forms.Label();
             this.buttonZaloguj = new System.Windows.Forms.Button();
             this.textBoxHaslo = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.createAccount = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -50,15 +48,27 @@
             this.panel1.Controls.Add(this.createAccount);
             this.panel1.Controls.Add(this.buttonZaloguj);
             this.panel1.Controls.Add(this.textBoxHaslo);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.textBoxLogin);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(508, 442);
             this.panel1.TabIndex = 0;
+            // 
+            // createAccount
+            // 
+            this.createAccount.AutoSize = true;
+            this.createAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.createAccount.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.createAccount.Location = new System.Drawing.Point(403, 419);
+            this.createAccount.Name = "createAccount";
+            this.createAccount.Size = new System.Drawing.Size(71, 14);
+            this.createAccount.TabIndex = 6;
+            this.createAccount.Text = "Załóż konto";
+            this.createAccount.Click += new System.EventHandler(this.createAccount_Click);
+            this.createAccount.MouseEnter += new System.EventHandler(this.createAccount_MouseEnter);
+            this.createAccount.MouseLeave += new System.EventHandler(this.createAccount_MouseLeave);
             // 
             // buttonZaloguj
             // 
@@ -67,7 +77,7 @@
             this.buttonZaloguj.FlatAppearance.BorderSize = 0;
             this.buttonZaloguj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonZaloguj.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonZaloguj.Location = new System.Drawing.Point(34, 340);
+            this.buttonZaloguj.Location = new System.Drawing.Point(34, 349);
             this.buttonZaloguj.Name = "buttonZaloguj";
             this.buttonZaloguj.Size = new System.Drawing.Size(440, 67);
             this.buttonZaloguj.TabIndex = 5;
@@ -78,44 +88,34 @@
             // textBoxHaslo
             // 
             this.textBoxHaslo.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxHaslo.Location = new System.Drawing.Point(104, 247);
+            this.textBoxHaslo.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxHaslo.Location = new System.Drawing.Point(66, 247);
             this.textBoxHaslo.Name = "textBoxHaslo";
             this.textBoxHaslo.Size = new System.Drawing.Size(370, 50);
             this.textBoxHaslo.TabIndex = 4;
-            this.textBoxHaslo.UseSystemPasswordChar = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::projekt_bazy.Properties.Resources.pngwave;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 247);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.textBoxHaslo.Text = " Hasło";
+            this.textBoxHaslo.Enter += new System.EventHandler(this.textBoxHaslo_Enter);
+            this.textBoxHaslo.Leave += new System.EventHandler(this.textBoxHaslo_Leave);
             // 
             // textBoxLogin
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxLogin.Location = new System.Drawing.Point(104, 161);
+            this.textBoxLogin.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxLogin.Location = new System.Drawing.Point(66, 157);
             this.textBoxLogin.Multiline = true;
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(370, 64);
             this.textBoxLogin.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::projekt_bazy.Properties.Resources.iconfinder_user_alt_285645;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 161);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.textBoxLogin.Text = "Login";
+            this.textBoxLogin.Enter += new System.EventHandler(this.textBoxLogin_Enter);
+            this.textBoxLogin.Leave += new System.EventHandler(this.textBoxLogin_Leave);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel2.Controls.Add(this.close);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(508, 100);
@@ -148,19 +148,13 @@
             this.label1.Text = "Logowanie";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // createAccount
+            // pictureBox2
             // 
-            this.createAccount.AutoSize = true;
-            this.createAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.createAccount.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.createAccount.Location = new System.Drawing.Point(403, 419);
-            this.createAccount.Name = "createAccount";
-            this.createAccount.Size = new System.Drawing.Size(71, 14);
-            this.createAccount.TabIndex = 6;
-            this.createAccount.Text = "Załóż konto";
-            this.createAccount.Click += new System.EventHandler(this.createAccount_Click);
-            this.createAccount.MouseEnter += new System.EventHandler(this.createAccount_MouseEnter);
-            this.createAccount.MouseLeave += new System.EventHandler(this.createAccount_MouseLeave);
+            this.pictureBox2.Location = new System.Drawing.Point(54, 47);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // loginForm
             // 
@@ -175,10 +169,9 @@
             this.Load += new System.EventHandler(this.loginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,7 +184,6 @@
         private System.Windows.Forms.TextBox textBoxHaslo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBoxLogin;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label close;
         private System.Windows.Forms.Button buttonZaloguj;
         private System.Windows.Forms.Label createAccount;
