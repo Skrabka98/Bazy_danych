@@ -16,5 +16,10 @@ namespace projekt_bazy
         {
             InitializeComponent();
         }
+
+        private void zalogowanoUserForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,8 +50,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(630, 282);
+            this.panel1.Size = new System.Drawing.Size(840, 422);
             this.panel1.TabIndex = 1;
             // 
             // button3
@@ -61,9 +62,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(49, 205);
+            this.button3.Location = new System.Drawing.Point(77, 331);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(498, 43);
+            this.button3.Size = new System.Drawing.Size(664, 53);
             this.button3.TabIndex = 9;
             this.button3.Text = "ZAREJESTRUJ";
             this.button3.UseVisualStyleBackColor = false;
@@ -75,12 +77,14 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(403, 138);
+            this.button2.Location = new System.Drawing.Point(537, 170);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 43);
+            this.button2.Size = new System.Drawing.Size(263, 53);
             this.button2.TabIndex = 8;
-            this.button2.Text = "ZAREJESTRUJ";
+            this.button2.Text = "Dodaj wytwórnie";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -89,9 +93,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(217, 138);
+            this.button1.Location = new System.Drawing.Point(289, 170);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 43);
+            this.button1.Size = new System.Drawing.Size(220, 53);
             this.button1.TabIndex = 7;
             this.button1.Text = "Dodaj gatunek";
             this.button1.UseVisualStyleBackColor = false;
@@ -104,9 +109,10 @@
             this.buttonZarejestruj.FlatAppearance.BorderSize = 0;
             this.buttonZarejestruj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonZarejestruj.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonZarejestruj.Location = new System.Drawing.Point(49, 138);
+            this.buttonZarejestruj.Location = new System.Drawing.Point(65, 170);
+            this.buttonZarejestruj.Margin = new System.Windows.Forms.Padding(4);
             this.buttonZarejestruj.Name = "buttonZarejestruj";
-            this.buttonZarejestruj.Size = new System.Drawing.Size(153, 43);
+            this.buttonZarejestruj.Size = new System.Drawing.Size(204, 53);
             this.buttonZarejestruj.TabIndex = 6;
             this.buttonZarejestruj.Text = "Dodaj aktora";
             this.buttonZarejestruj.UseVisualStyleBackColor = false;
@@ -118,8 +124,9 @@
             this.panel2.Controls.Add(this.close);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(630, 100);
+            this.panel2.Size = new System.Drawing.Size(840, 123);
             this.panel2.TabIndex = 0;
             // 
             // close
@@ -128,9 +135,10 @@
             this.close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.close.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.close.ForeColor = System.Drawing.Color.Black;
-            this.close.Location = new System.Drawing.Point(603, 0);
+            this.close.Location = new System.Drawing.Point(804, 0);
+            this.close.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(23, 22);
+            this.close.Size = new System.Drawing.Size(29, 29);
             this.close.TabIndex = 1;
             this.close.Text = "X";
             this.close.Click += new System.EventHandler(this.close_Click);
@@ -141,20 +149,23 @@
             this.label1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(630, 100);
+            this.label1.Size = new System.Drawing.Size(840, 123);
             this.label1.TabIndex = 0;
             this.label1.Text = "Narzędzie administratora";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // zalogowanoAdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(630, 282);
+            this.ClientSize = new System.Drawing.Size(840, 422);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "zalogowanoAdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Narzędzie Administratorskie";

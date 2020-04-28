@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.goToLoginLabel = new System.Windows.Forms.Label();
             this.textBoxPowHaslo = new System.Windows.Forms.TextBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.textBoxMail = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Label();
             this.labelRejestracja = new System.Windows.Forms.Label();
-            this.goToLoginLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,17 +58,34 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(749, 653);
+            this.panel1.Size = new System.Drawing.Size(999, 804);
             this.panel1.TabIndex = 1;
+            // 
+            // goToLoginLabel
+            // 
+            this.goToLoginLabel.AutoSize = true;
+            this.goToLoginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.goToLoginLabel.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.goToLoginLabel.Location = new System.Drawing.Point(715, 773);
+            this.goToLoginLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.goToLoginLabel.Name = "goToLoginLabel";
+            this.goToLoginLabel.Size = new System.Drawing.Size(143, 16);
+            this.goToLoginLabel.TabIndex = 21;
+            this.goToLoginLabel.Text = "Posiadam już konto";
+            this.goToLoginLabel.Click += new System.EventHandler(this.goToLoginLabel_Click);
+            this.goToLoginLabel.MouseEnter += new System.EventHandler(this.goToLoginLabel_MouseEnter);
+            this.goToLoginLabel.MouseLeave += new System.EventHandler(this.goToLoginLabel_MouseLeave);
             // 
             // textBoxPowHaslo
             // 
             this.textBoxPowHaslo.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxPowHaslo.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxPowHaslo.Location = new System.Drawing.Point(98, 462);
+            this.textBoxPowHaslo.Location = new System.Drawing.Point(131, 569);
+            this.textBoxPowHaslo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPowHaslo.Name = "textBoxPowHaslo";
-            this.textBoxPowHaslo.Size = new System.Drawing.Size(522, 48);
+            this.textBoxPowHaslo.Size = new System.Drawing.Size(695, 58);
             this.textBoxPowHaslo.TabIndex = 9;
             this.textBoxPowHaslo.Text = "Powtórz hasło";
             this.textBoxPowHaslo.Enter += new System.EventHandler(this.textBoxPowHaslo_Enter);
@@ -78,10 +95,11 @@
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxLogin.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxLogin.Location = new System.Drawing.Point(98, 298);
+            this.textBoxLogin.Location = new System.Drawing.Point(131, 367);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxLogin.Multiline = true;
             this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.Size = new System.Drawing.Size(522, 50);
+            this.textBoxLogin.Size = new System.Drawing.Size(695, 61);
             this.textBoxLogin.TabIndex = 8;
             this.textBoxLogin.Text = "Login";
             this.textBoxLogin.Enter += new System.EventHandler(this.textBoxLogin_Enter);
@@ -91,10 +109,11 @@
             // 
             this.textBoxMail.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxMail.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxMail.Location = new System.Drawing.Point(98, 215);
+            this.textBoxMail.Location = new System.Drawing.Point(131, 265);
+            this.textBoxMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMail.Multiline = true;
             this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(522, 50);
+            this.textBoxMail.Size = new System.Drawing.Size(695, 61);
             this.textBoxMail.TabIndex = 7;
             this.textBoxMail.Text = "Email";
             this.textBoxMail.Enter += new System.EventHandler(this.textBoxMail_Enter);
@@ -104,10 +123,11 @@
             // 
             this.textBoxNazwisko.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNazwisko.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxNazwisko.Location = new System.Drawing.Point(370, 136);
+            this.textBoxNazwisko.Location = new System.Drawing.Point(493, 167);
+            this.textBoxNazwisko.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNazwisko.Multiline = true;
             this.textBoxNazwisko.Name = "textBoxNazwisko";
-            this.textBoxNazwisko.Size = new System.Drawing.Size(250, 50);
+            this.textBoxNazwisko.Size = new System.Drawing.Size(332, 61);
             this.textBoxNazwisko.TabIndex = 6;
             this.textBoxNazwisko.Text = "Nazwisko";
             this.textBoxNazwisko.Enter += new System.EventHandler(this.textBoxNazwisko_Enter);
@@ -120,9 +140,10 @@
             this.buttonZarejestruj.FlatAppearance.BorderSize = 0;
             this.buttonZarejestruj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonZarejestruj.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonZarejestruj.Location = new System.Drawing.Point(132, 535);
+            this.buttonZarejestruj.Location = new System.Drawing.Point(176, 658);
+            this.buttonZarejestruj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonZarejestruj.Name = "buttonZarejestruj";
-            this.buttonZarejestruj.Size = new System.Drawing.Size(440, 67);
+            this.buttonZarejestruj.Size = new System.Drawing.Size(587, 82);
             this.buttonZarejestruj.TabIndex = 5;
             this.buttonZarejestruj.Text = "ZAREJESTRUJ";
             this.buttonZarejestruj.UseVisualStyleBackColor = false;
@@ -132,9 +153,10 @@
             // 
             this.textBoxHaslo.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxHaslo.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxHaslo.Location = new System.Drawing.Point(98, 377);
+            this.textBoxHaslo.Location = new System.Drawing.Point(131, 464);
+            this.textBoxHaslo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxHaslo.Name = "textBoxHaslo";
-            this.textBoxHaslo.Size = new System.Drawing.Size(522, 48);
+            this.textBoxHaslo.Size = new System.Drawing.Size(695, 58);
             this.textBoxHaslo.TabIndex = 4;
             this.textBoxHaslo.Text = "Hasło";
             this.textBoxHaslo.Enter += new System.EventHandler(this.textBoxHaslo_Enter);
@@ -144,10 +166,11 @@
             // 
             this.textBoxImie.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxImie.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxImie.Location = new System.Drawing.Point(98, 136);
+            this.textBoxImie.Location = new System.Drawing.Point(131, 167);
+            this.textBoxImie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxImie.Multiline = true;
             this.textBoxImie.Name = "textBoxImie";
-            this.textBoxImie.Size = new System.Drawing.Size(250, 50);
+            this.textBoxImie.Size = new System.Drawing.Size(332, 61);
             this.textBoxImie.TabIndex = 20;
             this.textBoxImie.Text = "Imie";
             this.textBoxImie.Enter += new System.EventHandler(this.textBoxImie_Enter);
@@ -158,9 +181,10 @@
             this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel2.Controls.Add(this.close);
             this.panel2.Controls.Add(this.labelRejestracja);
-            this.panel2.Location = new System.Drawing.Point(-13, -2);
+            this.panel2.Location = new System.Drawing.Point(-17, -2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(776, 100);
+            this.panel2.Size = new System.Drawing.Size(1035, 123);
             this.panel2.TabIndex = 0;
             // 
             // close
@@ -169,9 +193,10 @@
             this.close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.close.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.close.ForeColor = System.Drawing.Color.Black;
-            this.close.Location = new System.Drawing.Point(741, 0);
+            this.close.Location = new System.Drawing.Point(988, 0);
+            this.close.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(23, 22);
+            this.close.Size = new System.Drawing.Size(29, 29);
             this.close.TabIndex = 1;
             this.close.Text = "X";
             this.close.Click += new System.EventHandler(this.close_Click);
@@ -184,34 +209,23 @@
             this.labelRejestracja.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelRejestracja.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.labelRejestracja.Location = new System.Drawing.Point(0, 0);
+            this.labelRejestracja.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRejestracja.Name = "labelRejestracja";
             this.labelRejestracja.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelRejestracja.Size = new System.Drawing.Size(776, 100);
+            this.labelRejestracja.Size = new System.Drawing.Size(1035, 123);
             this.labelRejestracja.TabIndex = 0;
             this.labelRejestracja.Text = "Rejestracja";
             this.labelRejestracja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // goToLoginLabel
-            // 
-            this.goToLoginLabel.AutoSize = true;
-            this.goToLoginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.goToLoginLabel.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.goToLoginLabel.Location = new System.Drawing.Point(536, 628);
-            this.goToLoginLabel.Name = "goToLoginLabel";
-            this.goToLoginLabel.Size = new System.Drawing.Size(115, 14);
-            this.goToLoginLabel.TabIndex = 21;
-            this.goToLoginLabel.Text = "Posiadam już konto";
-            this.goToLoginLabel.Click += new System.EventHandler(this.goToLoginLabel_Click);
-            this.goToLoginLabel.MouseEnter += new System.EventHandler(this.goToLoginLabel_MouseEnter);
-            this.goToLoginLabel.MouseLeave += new System.EventHandler(this.goToLoginLabel_MouseLeave);
+            this.labelRejestracja.Click += new System.EventHandler(this.labelRejestracja_Click);
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 653);
+            this.ClientSize = new System.Drawing.Size(999, 804);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";

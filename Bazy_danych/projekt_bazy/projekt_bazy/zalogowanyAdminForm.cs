@@ -35,5 +35,17 @@ namespace projekt_bazy
             dodajGatunekForm gatunek = new dodajGatunekForm();
             gatunek.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            dodajWytwornieForm wytwornia = new dodajWytwornieForm();
+            wytwornia.Show();
+        }
     }
 }
