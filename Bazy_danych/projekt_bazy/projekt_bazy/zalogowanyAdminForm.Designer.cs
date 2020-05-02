@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dodajWytwornie = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dodajFilm = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +45,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel1.Controls.Add(this.dodajFilm);
+            this.panel1.Controls.Add(this.dodajWytwornie);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -52,8 +56,24 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(840, 422);
+            this.panel1.Size = new System.Drawing.Size(840, 639);
             this.panel1.TabIndex = 1;
+            // 
+            // dodajWytwornie
+            // 
+            this.dodajWytwornie.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dodajWytwornie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dodajWytwornie.FlatAppearance.BorderSize = 0;
+            this.dodajWytwornie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dodajWytwornie.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dodajWytwornie.Location = new System.Drawing.Point(537, 170);
+            this.dodajWytwornie.Margin = new System.Windows.Forms.Padding(4);
+            this.dodajWytwornie.Name = "dodajWytwornie";
+            this.dodajWytwornie.Size = new System.Drawing.Size(244, 53);
+            this.dodajWytwornie.TabIndex = 10;
+            this.dodajWytwornie.Text = "Dodaj wytwórnie";
+            this.dodajWytwornie.UseVisualStyleBackColor = false;
+            this.dodajWytwornie.Click += new System.EventHandler(this.dodajWytwornie_Click);
             // 
             // button3
             // 
@@ -62,7 +82,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(77, 331);
+            this.button3.Location = new System.Drawing.Point(56, 499);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(664, 53);
@@ -77,14 +97,13 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(537, 170);
+            this.button2.Location = new System.Drawing.Point(65, 270);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(263, 53);
+            this.button2.Size = new System.Drawing.Size(204, 53);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Dodaj wytwórnie";
+            this.button2.Text = "ZAREJESTRUJ";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -155,14 +174,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Narzędzie administratora";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // dodajFilm
+            // 
+            this.dodajFilm.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dodajFilm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dodajFilm.FlatAppearance.BorderSize = 0;
+            this.dodajFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dodajFilm.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dodajFilm.Location = new System.Drawing.Point(289, 270);
+            this.dodajFilm.Margin = new System.Windows.Forms.Padding(4);
+            this.dodajFilm.Name = "dodajFilm";
+            this.dodajFilm.Size = new System.Drawing.Size(220, 53);
+            this.dodajFilm.TabIndex = 11;
+            this.dodajFilm.Text = "Dodaj Film";
+            this.dodajFilm.UseVisualStyleBackColor = false;
+            this.dodajFilm.Click += new System.EventHandler(this.dodajFilm_Click);
             // 
             // zalogowanoAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(840, 422);
+            this.ClientSize = new System.Drawing.Size(840, 639);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -186,5 +220,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonZarejestruj;
+        private System.Windows.Forms.Button dodajWytwornie;
+        private System.Windows.Forms.Button dodajFilm;
     }
 }

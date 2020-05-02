@@ -36,16 +36,18 @@ namespace projekt_bazy
             gatunek.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void dodajWytwornie_Click(object sender, EventArgs e)
         {
             this.Close();
             dodajWytwornieForm wytwornia = new dodajWytwornieForm();
             wytwornia.Show();
+        }
+
+        private void dodajFilm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            dodajFilmForm film = new dodajFilmForm();
+            film.Show();
         }
     }
 }

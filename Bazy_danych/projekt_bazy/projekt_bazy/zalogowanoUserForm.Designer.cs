@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // zalogowanoUserForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "zalogowanoUserForm";
             this.Text = "zalogowanoUserForm";
-            this.Load += new System.EventHandler(this.zalogowanoUserForm_Load);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

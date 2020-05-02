@@ -199,10 +199,5 @@ namespace projekt_bazy
             zalogowanoAdminForm adminForm = new zalogowanoAdminForm();
             adminForm.Show();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

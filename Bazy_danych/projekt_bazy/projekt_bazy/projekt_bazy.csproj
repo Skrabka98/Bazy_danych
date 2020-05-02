@@ -70,6 +70,12 @@
     <Compile Include="dodajWytwornieForm.Designer.cs">
       <DependentUpon>dodajWytwornieForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="dodajFilmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dodajFilmForm.Designer.cs">
+      <DependentUpon>dodajFilmForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <EmbeddedResource Include="dodajAktoraForm.resx">
       <DependentUpon>dodajAktoraForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dodajFilmForm.resx">
+      <DependentUpon>dodajFilmForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dodajGatunekForm.resx">
       <DependentUpon>dodajGatunekForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,9 +129,6 @@
     </Compile>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="zalogowanoUserForm.resx">
-      <DependentUpon>zalogowanoUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="zalogowanyAdminForm.resx">
       <DependentUpon>zalogowanyAdminForm.cs</DependentUpon>

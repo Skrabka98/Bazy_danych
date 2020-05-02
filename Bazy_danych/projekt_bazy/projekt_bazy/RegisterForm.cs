@@ -260,10 +260,5 @@ namespace projekt_bazy
         {
             goToLoginLabel.ForeColor = Color.Black;
         }
-
-        private void labelRejestracja_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

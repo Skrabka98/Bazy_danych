@@ -60,7 +60,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 802);
             this.panel1.TabIndex = 2;
@@ -73,7 +73,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(404, 711);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(333, 62);
             this.button1.TabIndex = 28;
@@ -89,7 +89,7 @@
             this.buttonDodajAktora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDodajAktora.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonDodajAktora.Location = new System.Drawing.Point(404, 619);
-            this.buttonDodajAktora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDodajAktora.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDodajAktora.Name = "buttonDodajAktora";
             this.buttonDodajAktora.Size = new System.Drawing.Size(333, 62);
             this.buttonDodajAktora.TabIndex = 26;
@@ -104,7 +104,7 @@
             this.Nazwisko});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(41, 151);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(320, 621);
             this.listView1.TabIndex = 25;
@@ -126,7 +126,7 @@
             this.textBoxMiejsceUr.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxMiejsceUr.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBoxMiejsceUr.Location = new System.Drawing.Point(404, 528);
-            this.textBoxMiejsceUr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMiejsceUr.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMiejsceUr.Multiline = true;
             this.textBoxMiejsceUr.Name = "textBoxMiejsceUr";
             this.textBoxMiejsceUr.Size = new System.Drawing.Size(332, 61);
@@ -140,7 +140,7 @@
             this.textBoxDataUro.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxDataUro.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBoxDataUro.Location = new System.Drawing.Point(404, 430);
-            this.textBoxDataUro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDataUro.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDataUro.Multiline = true;
             this.textBoxDataUro.Name = "textBoxDataUro";
             this.textBoxDataUro.Size = new System.Drawing.Size(332, 61);
@@ -154,7 +154,7 @@
             this.textBoxWiek.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxWiek.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBoxWiek.Location = new System.Drawing.Point(404, 335);
-            this.textBoxWiek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxWiek.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxWiek.Multiline = true;
             this.textBoxWiek.Name = "textBoxWiek";
             this.textBoxWiek.Size = new System.Drawing.Size(332, 61);
@@ -168,7 +168,7 @@
             this.imieTextBox.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.imieTextBox.ForeColor = System.Drawing.SystemColors.GrayText;
             this.imieTextBox.Location = new System.Drawing.Point(404, 151);
-            this.imieTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imieTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.imieTextBox.Multiline = true;
             this.imieTextBox.Name = "imieTextBox";
             this.imieTextBox.Size = new System.Drawing.Size(332, 61);
@@ -182,7 +182,7 @@
             this.textBoxNazwisko.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNazwisko.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBoxNazwisko.Location = new System.Drawing.Point(404, 244);
-            this.textBoxNazwisko.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNazwisko.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNazwisko.Multiline = true;
             this.textBoxNazwisko.Name = "textBoxNazwisko";
             this.textBoxNazwisko.Size = new System.Drawing.Size(332, 61);
@@ -197,7 +197,7 @@
             this.panel2.Controls.Add(this.close);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(840, 123);
             this.panel2.TabIndex = 0;
@@ -230,7 +230,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Dodawanie aktora";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dodajAktoraForm
             // 
@@ -239,7 +238,7 @@
             this.ClientSize = new System.Drawing.Size(837, 802);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dodajAktoraForm";
             this.Text = "Dodaj aktora";
             this.Load += new System.EventHandler(this.dodajAktoraForm_Load);
