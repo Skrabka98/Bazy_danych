@@ -32,13 +32,13 @@
             this.krajTextBox = new System.Windows.Forms.TextBox();
             this.wytworniaTextBox = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.nazwa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.kraj = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.closeButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonDodajWytwornie = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.nazwa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.kraj = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,8 +55,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(887, 695);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(885, 683);
+            this.panel1.TabIndex = 1;
             // 
             // krajTextBox
             // 
@@ -99,6 +99,20 @@
             this.listView1.TabIndex = 30;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // Id
+            // 
+            this.Id.Text = "Id";
+            // 
+            // nazwa
+            // 
+            this.nazwa.Text = "nazwa";
+            this.nazwa.Width = 159;
+            // 
+            // kraj
+            // 
+            this.kraj.Text = "kraj";
+            this.kraj.Width = 135;
             // 
             // closeButton
             // 
@@ -161,26 +175,16 @@
             this.label1.Text = "Dodawanie Wytwórni";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Id
+            // kurwaaa
             // 
-            this.Id.Text = "Id";
-            // 
-            // nazwa
-            // 
-            this.nazwa.Text = "nazwa";
-            this.nazwa.Width = 159;
-            // 
-            // kraj
-            // 
-            this.kraj.Text = "kraj";
-            this.kraj.Width = 135;
-            // 
-            // dodajWytwornieForm
-            // 
-            this.ClientSize = new System.Drawing.Size(887, 695);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(885, 683);
             this.Controls.Add(this.panel1);
-            this.Name = "dodajWytwornieForm";
-            this.Load += new System.EventHandler(this.dodajWytwornieForm_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "kurwaaa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "kurwaaa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -190,15 +194,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonDodajWytwornie;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox krajTextBox;
         private System.Windows.Forms.TextBox wytworniaTextBox;
+        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader Id;
         private System.Windows.Forms.ColumnHeader nazwa;
         private System.Windows.Forms.ColumnHeader kraj;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDodajWytwornie;
+        private System.Windows.Forms.Label label1;
     }
 }

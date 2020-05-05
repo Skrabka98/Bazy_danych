@@ -49,5 +49,12 @@ namespace projekt_bazy
             dodajFilmForm film = new dodajFilmForm();
             film.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            loginForm login = new loginForm();
+            login.Show();
+        }
     }
 }

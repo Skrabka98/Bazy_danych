@@ -85,3 +85,6 @@ E:\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.exe
 E:\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.pdb
 E:\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.dodajWytwornieForm.resources
 E:\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.dodajFilmForm.resources
+C:\ppo\39607\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.dodajFilmForm.resources
+C:\ppo\39607\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.dodajWytwornieForm.resources
+C:\ppo\39607\Bazy_danych\Bazy_danych\projekt_bazy\projekt_bazy\obj\Debug\projekt_bazy.zalogowanoUserForm.resources

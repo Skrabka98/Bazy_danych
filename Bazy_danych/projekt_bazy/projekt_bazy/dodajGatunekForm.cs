@@ -95,9 +95,30 @@ namespace projekt_bazy
 
 
             bd.openConn();
-            if (command.ExecuteNonQuery() == 1)
+            if (!fieldsIsEmpty())
             {
-                MessageBox.Show("Gatunek filmu został dodany");
+
+                if (!gatunekExist())
+                {
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Udało się dodać gatunek filmu!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Taki gatunek istnieje");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Najpierw podaj wszystkie dane!");
             }
 
             bd.closeConn();
@@ -113,6 +134,36 @@ namespace projekt_bazy
             this.Close();
             zalogowanoAdminForm adminForm = new zalogowanoAdminForm();
             adminForm.Show();
+        }
+        public Boolean gatunekExist()
+        {
+            bazaDanych bd = new bazaDanych();
+            String gatunek = textBoxGatunek.Text;
+            DataTable dataTable = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `Gatunek_filmu` WHERE `gatunek` = @gatunek", bd.getConnection());
+            command.Parameters.Add("@gatunek", MySqlDbType.VarChar).Value = gatunek;
+            adapter.SelectCommand = command;
+            adapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+        public Boolean fieldsIsEmpty()
+        {
+            String gatunek = textBoxGatunek.Text;
+            if (gatunek.Equals("Gatunek"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

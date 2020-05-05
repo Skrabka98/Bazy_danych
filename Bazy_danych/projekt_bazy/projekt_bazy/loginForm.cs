@@ -13,6 +13,7 @@ namespace projekt_bazy
 {
     public partial class loginForm : Form
     {
+       int xxx=0;
        public loginForm()
         {
             InitializeComponent();
@@ -53,7 +54,6 @@ namespace projekt_bazy
             command.Parameters.Add("@haslo", MySqlDbType.VarChar).Value = haslo;
             adapter.SelectCommand = command;
             adapter.Fill(dataTable);
-            
                 
 
 
@@ -61,15 +61,18 @@ namespace projekt_bazy
                 {
                 var upra = dataTable.Rows[0]["uprawnienia"].ToString();
                 var upraBool = bool.Parse(upra);
+                var id = dataTable.Rows[0]["id_uzytkownika"].ToString();
+                //this.xxx = int.Parse(id);
+              
                 if (upraBool == false)
                     {
-                        this.Hide();
-                        zalogowanoUserForm user = new zalogowanoUserForm();
+                        //this.Hide();
+                        zalogowanoUserForm user = new zalogowanoUserForm(id);
                         user.Show();
                     }
                     else if (upraBool == true)
                     {
-                        this.Hide();
+                        //this.Hide();
                         zalogowanoAdminForm admin = new zalogowanoAdminForm();
                         admin.Show();
                     }
@@ -148,5 +151,10 @@ namespace projekt_bazy
                 textBoxHaslo.ForeColor = Color.Gray;
             }
         }
+        public int getId()
+        {
+            return this.xxx;
+        }
+        
     }
 }

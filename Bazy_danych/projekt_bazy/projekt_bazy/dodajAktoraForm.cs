@@ -64,9 +64,30 @@ namespace projekt_bazy
 
 
             bd.openConn();
-            if(command.ExecuteNonQuery() == 1)
+            if (!fieldsIsEmpty())
             {
-                MessageBox.Show("Aktor został dodany!");
+
+                    if (!actorExist())
+                    {
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Udało się dodać aktora!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error");
+                    }
+                    
+                    }
+                    else
+                    {
+                    MessageBox.Show("Aktor istnieje");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Najpierw podaj wszystkie dane!");
             }
 
             bd.closeConn();
@@ -198,6 +219,44 @@ namespace projekt_bazy
             this.Close();
             zalogowanoAdminForm adminForm = new zalogowanoAdminForm();
             adminForm.Show();
+        }
+        public Boolean actorExist()
+        {
+            bazaDanych bd = new bazaDanych();
+            String nazwisko = textBoxNazwisko.Text;
+            String imie = imieTextBox.Text;
+            String wiek = textBoxWiek.Text;
+            DataTable dataTable = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `Aktor` WHERE `imie` = @imie and `nazwisko` = @nazwisko and `wiek` = @wiek", bd.getConnection());
+            command.Parameters.Add("@imie", MySqlDbType.VarChar).Value = imie;
+            command.Parameters.Add("@nazwisko", MySqlDbType.VarChar).Value = nazwisko;
+            command.Parameters.Add("@wiek", MySqlDbType.VarChar).Value = wiek;
+            adapter.SelectCommand = command;
+            adapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+        public Boolean fieldsIsEmpty()
+        {
+            String imie = imieTextBox.Text;
+            String nazwisko = textBoxNazwisko.Text;
+            String email = textBoxWiek.Text;
+            String login = textBoxDataUro.Text;
+            String haslo = textBoxMiejsceUr.Text;
+            if (imie.Equals("Imie") || nazwisko.Equals("Nazwisko") || email.Equals("Wiek") || login.Equals("Data uro") || haslo.Equals("Miejsce uro"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
