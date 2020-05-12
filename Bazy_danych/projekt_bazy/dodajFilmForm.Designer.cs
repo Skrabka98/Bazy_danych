@@ -65,7 +65,7 @@
             this.tytulTextBox.Location = new System.Drawing.Point(345, 122);
             this.tytulTextBox.Multiline = true;
             this.tytulTextBox.Name = "tytulTextBox";
-            this.tytulTextBox.Size = new System.Drawing.Size(250, 50);
+            this.tytulTextBox.Size = new System.Drawing.Size(382, 50);
             this.tytulTextBox.TabIndex = 22;
             this.tytulTextBox.Text = "Tytuł";
             this.tytulTextBox.Enter += new System.EventHandler(this.tytulTextBox_Enter);
@@ -91,7 +91,7 @@
             this.premieraTextBox.Location = new System.Drawing.Point(346, 178);
             this.premieraTextBox.Multiline = true;
             this.premieraTextBox.Name = "premieraTextBox";
-            this.premieraTextBox.Size = new System.Drawing.Size(250, 50);
+            this.premieraTextBox.Size = new System.Drawing.Size(381, 50);
             this.premieraTextBox.TabIndex = 25;
             this.premieraTextBox.Text = "Data premiery";
             this.premieraTextBox.Enter += new System.EventHandler(this.premieraTextBox_Enter);

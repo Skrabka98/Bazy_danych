@@ -150,7 +150,7 @@ namespace projekt_bazy
             if (command.ExecuteNonQuery() == 1)
             {
                 MessageBox.Show("Film został zarezerwowany");
-                InitializeComponent();
+                ReloadForm();
             }
             bd.closeConn();
         }
@@ -168,6 +168,11 @@ namespace projekt_bazy
         private void close_MouseLeave(object sender, EventArgs e)
         {
             close.ForeColor = Color.Black;
+        }
+        private void ReloadForm()
+        {
+            listBox1.ResetText();
+            //and how many controls or settings you want, just add them here
         }
     }
 }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelObsada = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.labelZarezerwowane = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,8 +44,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelObsada = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1060, 771);
             this.panel1.TabIndex = 3;
+            // 
+            // labelObsada
+            // 
+            this.labelObsada.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelObsada.Location = new System.Drawing.Point(431, 455);
+            this.labelObsada.Name = "labelObsada";
+            this.labelObsada.Size = new System.Drawing.Size(425, 102);
+            this.labelObsada.TabIndex = 38;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(340, 455);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 24);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Obsada:";
             // 
             // labelZarezerwowane
             // 
@@ -156,7 +173,7 @@
             // 
             // labelTytuł
             // 
-            this.labelTytuł.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelTytuł.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelTytuł.Location = new System.Drawing.Point(337, 125);
             this.labelTytuł.Name = "labelTytuł";
             this.labelTytuł.Size = new System.Drawing.Size(553, 49);
@@ -198,23 +215,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Rezerwacja filmów";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelObsada
-            // 
-            this.labelObsada.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsada.Location = new System.Drawing.Point(431, 455);
-            this.labelObsada.Name = "labelObsada";
-            this.labelObsada.Size = new System.Drawing.Size(425, 102);
-            this.labelObsada.TabIndex = 38;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(340, 455);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 24);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "Obsada:";
             // 
             // zalogowanoUserForm
             // 
